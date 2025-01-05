@@ -1,38 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pitha Ghor</title>
     <style>
-        label{
+      /* label{
             display: block;
             margin-bottom: 5px;
-        }
+        } */
+      .checkbox-group {
+        display: block;
+        margin-bottom: 8px; /* Space between items */
+      }
     </style>
-</head>
-<body>
-    <header>
-
-    </header>
+  </head>
+  <body>
+    <header></header>
     <main>
-        <section>
-            <h2>Please Fill up the form!</h2>
-            <form>
-                <label for="name"> Your Name:
-                    <input id="name" type="text" placeholder="Enter your Name">
-                </label>
-                <label for="email">Your Email:
-                    <input type="email" name="" id="email" placeholder="Enter your Email">
-                </label>
-                <label for="phone">Your Phone:
-                    <input type="number" name="" id="phone" placeholder="Enter your Phone Number">
-                </label>
-            </form>
-        </section>
-    </main>
-    <footer>
+      <section>
+        <h2>Please Fill up the form!</h2>
+        <form>
+          <label for="name">
+            Your Name:
+            <input id="name" type="text" placeholder="Enter your Name" />
+          </label>
+          <label for="email"
+            >Your Email:
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter your Email"
+            />
+          </label>
+          <label for="phone"
+            >Your Phone:
+            <input
+              type="text"
+              name=""
+              id="phone"
+              placeholder="Enter your Phone Number"
+            />
+          </label>
 
-    </footer>
-</body>
+          <fieldset>
+            <legend>Pick one Pitha</legend>
+            <label for="chitoy">
+              <input type="radio" name="pitha" id="chitoy" />Chitoy
+            </label>
+            <label for="bhapa">
+              <input type="radio" name="pitha" id="bhapa" />Bhapa
+            </label>
+            <label for="puri">
+              <input type="radio" name="pitha" id="puri" />Puri
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Pick one or more Bhorta</legend>
+            <div class="checkbox-group">
+              <input type="checkbox" name="vorta" id="sorisha" />
+              <label for="sorisha">Sorisha</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" name="vorta" id="shutki" />
+              <label for="shutki">Shutki</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" name="vorta" id="chilli" />
+              <label for="chilli">Chilli</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Special Instruction</legend>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+          </fieldset>
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
